@@ -61,9 +61,9 @@ function toggleImage() {
 // BONUS ;)
 function secretMessage() {
     var text = document.getElementById("secret-message");
-    if(text.innerHTML === "Click HERE for something only programmers understand") {
+    if(text.innerHTML === "Click HERE") {
         text.innerHTML = "Q: What's the object-oriented way to become wealthy?? A: Inheritance";
     } else {
-        text.innerHTML = "Click HERE for something only programmers understand"
+        text.innerHTML = "Click HERE"
     }
 }

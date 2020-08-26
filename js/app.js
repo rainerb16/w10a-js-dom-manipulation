@@ -42,5 +42,20 @@ var remove = document.getElementById("parent");
 remove.removeChild(remove.childNodes[1]);
 
 // 9 - classList add(), remove(), toggle()
-var addElement = document.getElementById("image-dom");
-addElement.classList.add("image-dom-tree");
+var addElement = document.getElementById("image");
+addElement.classList.add("programming-image");
+
+// BONUS ;)
+function secretMessage() {
+    var text = document.getElementById("secret-message");
+    if(text.innerHTML === "Click HERE for something only programmers understand") {
+        text.innerHTML = "Q: What's the object-oriented way to become wealthy?? A: Inheritance";
+    } else {
+        text.innerHTML = "Click HERE for something only programmers understand"
+    }
+}
+
+// Another Bonus Image thing
+var programImage = document.getElementById("image");
+programImage.style.borderRadius = "70%";
+programImage.style.border = "5px solid maroon";

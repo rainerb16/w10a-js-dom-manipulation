@@ -42,8 +42,21 @@ var remove = document.getElementById("parent");
 remove.removeChild(remove.childNodes[1]);
 
 // 9 - classList add(), remove(), toggle()
+// add()
 var addElement = document.getElementById("image");
 addElement.classList.add("programming-image");
+
+// remove()
+function removeElement() {
+    var removeElement = document.getElementById("ptag-five");
+    removeElement.remove();
+  }
+
+// toggle()
+function toggleImage() {
+    var prgmImage = document.getElementById("image")
+    prgmImage.classList.toggle("programming-image");
+}
 
 // BONUS ;)
 function secretMessage() {
@@ -54,8 +67,3 @@ function secretMessage() {
         text.innerHTML = "Click HERE for something only programmers understand"
     }
 }
-
-// Another Bonus Image thing
-var programImage = document.getElementById("image");
-programImage.style.borderRadius = "70%";
-programImage.style.border = "5px solid maroon";
